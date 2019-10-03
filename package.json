@@ -1,0 +1,23 @@
+{
+  "name": "corkcoco-news-rss",
+  "version": "1.0.0",
+  "description": "Get list of news stories from the Cork County Council web-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "news",
+    "rss",
+    "corkcoco",
+    "cork",
+    "ireland"
+  ],
+  "author": "Conor O'Neill",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0",
+    "rss": "^1.2.2"
+  }
+}

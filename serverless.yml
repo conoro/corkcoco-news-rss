@@ -1,0 +1,21 @@
+service: corkcoco-news-rss
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  check:
+    handler: index.check
+    events:
+      - http:
+          path: rss
+          method: get
+          cors: true
+          integration: lambda
+          response:
+            headers:
+              Content-Type: "'text/xml'"
+            template: $input.path('$')
