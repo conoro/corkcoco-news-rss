@@ -7,6 +7,7 @@ provider:
 functions:
   check:
     handler: index.check
+    description: generate RSS feed from the Cork County Council website new
     events:
       - http:
           path: rss
